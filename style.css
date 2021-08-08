@@ -1,0 +1,92 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mutual {
+  height: 50px;
+}
+.orange {
+  background-color: #ff9a4b;
+}
+.gray {
+  background-color: #aaaaaa;
+}
+
+main {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.item1,
+.item2 {
+  margin-right: 30px;
+}
+
+.item-box {
+  width: 300px;
+  background-color: #eeeeee;
+  position: relative;
+  padding: 10px 10px;
+}
+
+.image1 {
+  height: 150px;
+  background-image: url("img/flow01.png");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.image2 {
+  height: 150px;
+  background-image: url("img/flow02.png");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.image3 {
+  height: 150px;
+  background-image: url("img/flow03.png");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.item-box h3 {
+  padding: 15px 0 5px 0;
+}
+
+.step {
+  background-color: #ff9a4b;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+
+  .box {
+    display: block;
+  }
+
+  .item-box {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+  .item3 {
+    margin-bottom: 0;
+  }
+}
